@@ -1,0 +1,75 @@
+/*******************************************************************************************************************
+*  BASE                                                                                                            
+*******************************************************************************************************************/
+html{background:#f2f2f2;}
+body{color:#727272; font:normal 13px "Helvetice Neue",Arial,Tahoma,Verdana; height:100%;}
+p{line-height:1.5em; margin-bottom:15px;}
+p strong{color:#424242;}
+
+/*******************************************************************************************************************
+*  LINKS                                                                                                           
+*******************************************************************************************************************/
+a{outline:0;}
+a:hover{color:#000; text-decoration:underline;}
+
+/*******************************************************************************************************************
+*  H1 - H4                                                                                                         
+*******************************************************************************************************************/
+h1, h2, h3, h4{line-height:1.2em; margin-bottom:15px; font-weight:bold;}
+h1{font-size:3.0em; color:#fff; font-weight:normal;}
+h1 strong{font-weight:bold;}
+h2{font-size:1.1em; color:#737373; margin-bottom:30px; border-bottom:1px solid #e5e5e5; padding-bottom:10px;}
+h3, h4{font-size:1.4em; color:#424242; text-shadow:1px 1px 1px #fff; margin-bottom:10px;}
+h4{font-size:1.6em;}
+
+/*******************************************************************************************************************
+*  HEADER                                                                                                          
+*******************************************************************************************************************/
+header{height:84px; line-height:84px; background:#1a1a1a; position:relative; z-index:100;}
+header a#logo{font-size:1.2em; font-weight:bold; display:block; position:absolute; top:0; left:20px; color:#fff; text-transform:uppercase; text-decoration:none;}
+header a#logo:hover{text-decoration:none; color:#f7f7f7;}
+header #nav{position:absolute; top:0; right:0;}
+header #nav > strong{display:none;}
+header #nav > ul > li{float:left; background:no-repeat 0 50%; position:relative;}
+header #nav > ul > li.parent > a{background:no-repeat 20px 50%; padding-left:40px;}
+header #nav > ul > li > ul{display:none; min-width:100%; position:absolute; top:62px; left:20px; line-height:normal; white-space:nowrap;}
+header #nav > ul > li > ul > li{margin-bottom:1px;}
+header #nav > ul > li > ul > li > a:hover{background:#000; color:#fff; text-decoration:none;}
+header #nav > ul > li:first-child{background:none;}
+header #nav > ul > li > a{float:left; color:#a2a2a2; display:block; height:84px; text-transform:uppercase; text-decoration:none; font-weight:bold; padding:0 20px; -webkit-transition:all 0.3s ease-in-out; -moz-transition:all 0.3s ease-in-out; -o-transition:all 0.3s ease-in-out; -ms-transition:all 0.3s ease-in-out; transition:all 0.3s ease-in-out;}
+header #nav > ul > li.active > a{cursor:pointer; text-decoration:none;}
+header #nav > ul > li > a:hover{color:#fff; text-decoration:none;}
+
+/*******************************************************************************************************************
+*  CONTENT                                                                                                         
+*******************************************************************************************************************/
+#content{padding:40px 0 50px; text-shadow:1px 1px 1px #fff;}
+.cols{margin-bottom:30px;}
+.cols li p{padding-left:45px;}
+.cols li.middle{margin:0 2%;}
+
+/*******************************************************************************************************************
+*  FOOTER                                                                                                          
+*******************************************************************************************************************/
+footer
+{
+	padding:30px 0;
+	background:#1a1a1a;
+	font-size:0.85em;
+	color:#777;
+	
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+footer p{line-height:1.9em;}
+footer a, footer a:link, footer a:focus{color:#999; -webkit-transition:all 0.3s ease-in-out; -moz-transition:all 0.3s ease-in-out; -o-transition:all 0.3s ease-in-out; -ms-transition:all 0.3s ease-in-out; transition:all 0.3s ease-in-out;}
+footer a:hover{color:#fff;}
+
+/*******************************************************************************************************************
+*  OTHER STYLES                                                                                                    
+*******************************************************************************************************************/
+.wrap{margin:0 auto; position:relative; max-width:940px; padding:0 20px;}
+.col{width:48%; position:relative; margin-bottom:20px;}
+.col h3, .col p{padding-left:60px;}
+.col .icon{position:absolute; top:0; left:0; padding:0;}

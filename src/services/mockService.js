@@ -178,6 +178,33 @@ const result = [
   }
 ]
 
+const menu = [
+  {
+    text: 'Subsurface',
+    value: '1'
+  },
+  {
+    text: 'Surface',
+    value: '2'
+  }
+]
+
+const reportBySection = {
+  header: 'REPORT OF SUBSURFACE',
+  reports: [
+    {
+      reportText: 'RFT',
+      reportValue: 'rft',
+      reportDesc: 'Description RFT'
+    },
+    {
+      reportText: 'LFT',
+      reportValue: 'lft',
+      reportDesc: 'Description LFT'
+    }
+  ]
+}
+
 export default {
   getSection () {
     return new Promise((resolve) => {
@@ -194,7 +221,7 @@ export default {
       setTimeout(() => resolve({data: report}), 200)
     })
   },
-  getResource (application) {
+  getResource (section, report) {
     return new Promise((resolve) => {
       setTimeout(() => resolve({data: resource}), 200)
     })
@@ -202,6 +229,16 @@ export default {
   getResult () {
     return new Promise((resolve) => {
       setTimeout(() => resolve({data: result}), 200)
+    })
+  },
+  getMenu () {
+    return new Promise((resolve) => {
+      setTimeout(() => resolve({data: menu}), 200)
+    })
+  },
+  getReportBySection (section) {
+    return new Promise((resolve) => {
+      setTimeout(() => resolve({data: reportBySection}), 200)
     })
   }
 }
