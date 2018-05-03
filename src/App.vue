@@ -20,12 +20,6 @@
     <!-- / #intro -->
     <hr>
     <router-view />
-    <footer class="clearFix">
-      <div class="wrap clearFix">
-        <p class="floatRight"> Copyright &copy; 2018 <a href="#">Company A</a> &ndash; All Rights Reserved<br>
-          If you have any questions or concerns, please contact <a target="_blank" href="http://www.os-templates.com/">IT's Email</a></p>
-      </div>
-    </footer>
   </div>
 </template>
 
