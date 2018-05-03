@@ -1,13 +1,25 @@
 <template>
   <div>
     <div class="col floatLeft">
-      <chart :type="'pie'" :datas="[12, 19, 3, 5, 9, 3]" :labels="['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange']" />
+      <chart :type="'line'" :datas="[12, 19, 3, 5, 9, 3]" :labels="['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange']" />
     </div>
     <div class="col floatLeft">
       <chart :type="'bar'" :datas="[12, 19, 3, 5, 9, 3]" :labels="['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange']" />
     </div>
     <div class="col floatLeft">
-      <chart :type="'line'" :datas="[12, 19, 3, 5, 9, 3]" :labels="['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange']" />
+      <chart :type="'radar'" :datas="[12, 19, 3, 5, 9, 3]" :labels="['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange']" />
+    </div>
+    <div class="col floatLeft">
+      <chart :type="'doughnut'" :datas="[12, 19, 3, 5, 9, 3]" :labels="['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange']" />
+    </div>
+    <div class="col floatLeft">
+      <chart :type="'pie'" :datas="[12, 19, 3, 5, 9, 3]" :labels="['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange']" />
+    </div>
+    <div class="col floatLeft">
+      <chart :type="'polarArea'" :datas="[12, 19, 3, 5, 9, 3]" :labels="['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange']" />
+    </div>
+    <div class="col floatLeft">
+      <chart :type="'bubble'" :datas="[{ x: 3, y: 3, r: 10 },{ x: 5, y: 5, r: 10 }]" :labels="['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange']" />
     </div>
     <div v-if="report !== ''">
       <report-filters :filters="resource.filters" @search="search" />
